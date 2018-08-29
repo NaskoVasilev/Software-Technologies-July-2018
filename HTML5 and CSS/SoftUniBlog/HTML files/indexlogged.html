@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoftUni Blog</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+</head>
+<body>
+<header>
+    <div class="navbar navbar-default navbar-fixed-top text-uppercase">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">SoftUni Blog</a>
+
+                <button type="button" class="navbar-toggle"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Welcome</a></li>
+                    <li><a href="createnewpost.html">New Post</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container body-content">
+        <div class="row">
+            <div class="col-md-6">
+                <article>
+                    <header>
+                        <h2>C# vs. Java: Which General Purpose Programming Language Is Best for You?</h2>
+                    </header>
+
+                    <p>
+                        WHAT IS C#?<br>
+                        C# is a general purpose programming language that first appeared in 2000, as part of Microsoft’s .NET initiative. It was designed for the Common Language Infrastructure (CLI)—an open specification developed by Microsoft and standardized by ISO and ECMA. C# applications are compiled into bytecode that can run on implementations of the CLI.
+                        <br>
+                        WHAT IS JAVA?<br>
+                        Initially released by Sun Microsystems in 1995, Java is a general purpose programming language that was designed with the specific goal of allowing developers to “write once, run anywhere.” Java applications are compiled into bytecode that can run on implementations of the Java Virtual Machine (JVM). Like CLI, JVM helps bridge the gap between source code and the 1s and 0s that the computer understands.
+                    </p>
+
+                    <small class="author">
+                        Anonymous Author
+                    </small>
+
+                    <footer>
+                        <div class="pull-right">
+                            <a class="btn btn-default btn-xs" href="viewpost.html">Read more &raquo;</a>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article>
+                    <header>
+                        <h2>THE DIFFERENCE BETWEEN HTML, CSS AND JAVASCRIPT</h2>
+                    </header>
+
+                    <p>
+                        Interested in moving into a career in web design but wondering about the different coding methods you’ll need to learn, and how they differ? Learn the difference between...
+                    </p>
+
+                    <small class="author">
+                        Anonymous Author
+                    </small>
+
+                    <footer>
+                        <div class="pull-right">
+                            <a class="btn btn-default btn-xs" href="secondviewpost.html">Read more &raquo;</a>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container modal-footer">
+        <p>&copy; Tech Module SoftUni May 2018</p>
+    </div>
+</footer>
+</body>
+</html>

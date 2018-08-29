@@ -1,0 +1,30 @@
+.red{
+    border: 2px solid red;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #807879;
+}
+.redWord{
+    color: red;
+}
+.green{
+    border: 2px solid green;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #807879;
+}
+.greenWord{
+    color: green;
+}
+.blue{
+    border: 2px solid blue;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #807879;
+}
+.blueWord{
+    color: blue
+}

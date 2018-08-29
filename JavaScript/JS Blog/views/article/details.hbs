@@ -1,0 +1,43 @@
+<div class="container body-content">
+    <div class="row">
+        <div class="col-md-12">
+            <article>
+                <header>
+                    <h2>{{article.title}}</h2>
+                </header>
+
+                <p>
+                    {{article.content}}
+                </p>
+
+                <small class="author">
+                    {{article.User.fullName}}
+                </small>
+                <br>
+                <span>Comments:</span>
+                <span class="pull-right">Authors:</span>
+                <br>
+                <br>
+                {{#each article.Comments}}
+                    <span class="pull-right">  {{this.User.fullName}}</span>
+
+                    <p>{{this.content}}</p>
+                {{/each}}
+                <br>
+
+                {{#if user}}
+                <form class="form-inline" method="POST" action="{{article.id}}/comment/add">
+                    <label class="sr-only" for="inlineFormInputName2">Add Comment</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" name="comment" placeholder="Comment ..">
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                </form>
+                    {{/if}}
+                    <footer>
+                    <div class="pull-right">
+                        <a class="btn btn-default btn-xs" href="/">Back &raquo;</a>
+                    </div>
+                </footer>
+            </article>
+        </div>
+    </div>
+</div>

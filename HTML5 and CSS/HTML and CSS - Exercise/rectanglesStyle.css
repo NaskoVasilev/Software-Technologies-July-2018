@@ -1,0 +1,17 @@
+.outer{
+    border:dotted blue;
+    border-radius: 5px;
+    padding: 15px;
+}
+.middle{
+    border:dashed red;
+    border-radius: 5px;
+    padding: 15px;
+}
+.inner{
+    border:solid green;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+}

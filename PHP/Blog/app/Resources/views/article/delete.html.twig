@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <form method="post">
+        <p style="color: red; font-size: 30px;">ARE YOU SURE YOU WANT TO DELETE THIS ARTICLE</p>
+
+        <div class="pull-right">
+            <button class="btn btn-danger btn"
+               type="submit">Yes</button>
+        </div>
+        {{ form_row(form._token) }}
+
+        <div class="pull-right">
+            <a class="btn btn-default btn"
+               href="{{ path('user_articles')}}">No</a>
+        </div>
+
+    </form>
+
+{% endblock %}
+

@@ -1,0 +1,28 @@
+<div class="container body-content">
+    <div class="row">
+        {{#each articles}}
+            <div class="col-md-12">
+                <article>
+                    <header>
+                        <h2>{{this.title}}</h2>
+                    </header>
+
+                    <p>{{this.content}}
+                    </p>
+
+                    <small class="author">
+                        {{this.User.fullName}}
+                    </small>
+
+                    <footer>
+                        <div class="pull-right">
+                            <a class="btn btn-primary btn-xs" href="/article/edit/{{this.id}}">Edit</a>
+                            <a class="btn btn-danger btn-xs" href="/article/delete/{{this.id}}">Delete</a>
+                            <a class="btn btn-default btn-xs" href="/article/details/{{this.id}}">Read more &raquo;</a>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        {{/each}}
+    </div>
+</div>
