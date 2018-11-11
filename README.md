@@ -29,4 +29,4 @@ This course is part of Tech module May 2018
 
 14. Career Orientation Day
 
-    Final Exam 100/100 points
+    Final Exam 16/16 points
